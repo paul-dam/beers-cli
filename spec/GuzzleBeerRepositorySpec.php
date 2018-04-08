@@ -3,8 +3,8 @@
 namespace spec\PaulDam\BeersCli;
 
 use PaulDam\BeersCli\GuzzleBeerRepository;
-use PaulDam\BeersCli\Beer;
-use PaulDam\BeersCli\BeerCollectionBuilder;
+use PaulDam\BeersCli\Models;
+use PaulDam\BeersCli\CollectionBuilder;
 use PaulDam\BeersCli\BeerCollection;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -13,7 +13,7 @@ use GuzzleHttp\Psr7\Response;
 
 class GuzzleBeerRepositorySpec extends ObjectBehavior
 {
-    function let(Client $client, BeerCollectionBuilder $builder)
+    function let(Client $client, CollectionBuilder $builder)
     {
         $this->beConstructedWith($client, $builder, []);
     }

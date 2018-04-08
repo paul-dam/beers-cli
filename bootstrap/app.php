@@ -58,13 +58,13 @@ $container
     ->withArgument(BeersCli\LabelFactory::class);
 
 $container
-    ->add(BeersCli\BeerCollectionBuilder::class)
+    ->add(BeersCli\CollectionBuilder::class)
     ->withArgument(BeersCli\LabelCollectionBuilder::class);
 
 $container
     ->add(BeersCli\GuzzleBeerRepository::class)
     ->withArgument(\GuzzleHttp\Client::class)
-    ->withArgument(BeersCli\BeerCollectionBuilder::class)
+    ->withArgument(BeersCli\CollectionBuilder::class)
     ->withArgument('config.beersdb');
 
 $container->add(

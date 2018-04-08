@@ -1,6 +1,6 @@
 <?php namespace PaulDam\BeersCli;
 
-use PaulDam\BeersCli\BeerCollectionBuilder as Builder;
+use PaulDam\BeersCli\CollectionBuilder as Builder;
 use GuzzleHttp\Client;
 
 class GuzzleBeerRepository implements BeerRepositoryInterface

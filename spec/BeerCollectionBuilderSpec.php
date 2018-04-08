@@ -2,10 +2,10 @@
 
 namespace spec\PaulDam\BeersCli;
 
-use PaulDam\BeersCli\BeerCollectionBuilder;
+use PaulDam\BeersCli\CollectionBuilder;
 use PaulDam\BeersCli\BeerCollection;
 use PaulDam\BeersCli\LabelCollectionBuilder;
-use PaulDam\BeersCli\Beer;
+use PaulDam\BeersCli\Models;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -18,7 +18,7 @@ class BeerCollectionBuilderSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType(BeerCollectionBuilder::class);
+        $this->shouldHaveType(CollectionBuilder::class);
     }
 
     function it_does_return_beer_collection()

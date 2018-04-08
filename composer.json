@@ -10,6 +10,7 @@
     ],
     "type": "project",
     "require": {
+        "php": ">=7.1",
         "phpspec/phpspec": "^4.0",
         "guzzlehttp/guzzle": "^6.3",
         "league/flysystem": "^1.0",

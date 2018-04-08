@@ -2,5 +2,8 @@
 
 interface WriterInterface
 {
-    public function write(string $content): void;
+    /**
+     * @param String $content
+     */
+    public function write(String $content): void;
 }

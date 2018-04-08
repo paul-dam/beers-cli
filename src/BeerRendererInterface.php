@@ -2,5 +2,9 @@
 
 interface BeerRendererInterface
 {
-    public function render(BeerCollection $beers): string;
+    /**
+     * @param BeerCollection $beers
+     * @return String
+     */
+    public function render(BeerCollection $beers): String;
 }

@@ -1,8 +1,11 @@
+<?php
 
-<?php namespace PaulDam\BeersCli;
+namespace PaulDam\BeersCli;
 
 class FileWriter implements WriterInterface
 {
+    private $path;
+
     public function __construct(string $path)
     {
         $this->path = $path;

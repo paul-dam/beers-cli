@@ -1,13 +1,33 @@
-<?php namespace PaulDam\BeersCli;
+<?php
 
-class BeerCollectionBuilder
+namespace PaulDam\BeersCli\Models;
+
+/**
+ * Class CollectionBuilder.
+ *
+ * @package PaulDam\BeersCli
+ */
+class CollectionBuilder
 {
+    /**
+     * @var LabelCollectionBuilder
+     */
+    private $labelCollectionBuilder;
+
+    /**
+     * CollectionBuilder constructor.
+     * @param LabelCollectionBuilder $labelCollectionBuilder
+     */
     public function __construct(
         LabelCollectionBuilder $labelCollectionBuilder
     ) {
         $this->labelCollectionBuilder = $labelCollectionBuilder;
     }
 
+    /**
+     * @param array $data
+     * @return BeerCollection
+     */
     public function fromData(array $data)
     {
         $beersArray = array_map(function ($beerData) {

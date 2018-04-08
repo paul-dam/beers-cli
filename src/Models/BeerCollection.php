@@ -1,4 +1,6 @@
-<?php namespace PaulDam\BeersCli;
+<?php
+
+namespace PaulDam\BeersCli\Models;
 
 class BeerCollection extends CollectionAbstract
 {

@@ -2,7 +2,7 @@
 
 namespace spec\PaulDam\BeersCli;
 
-use PaulDam\BeersCli\Beer;
+use PaulDam\BeersCli\Models;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
